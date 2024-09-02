@@ -1,0 +1,86 @@
+/* Reset básico para evitar inconsistências entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo para o menu */
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Estilo do corpo principal */
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Centralizar a imagem dentro do contêiner */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 100vh;           /* Ocupa 100% da altura da viewport */
+}
+
+/* Limitar o tamanho da imagem, se necessário */
+.image-container img {
+    max-width: 100%;
+    max-height: 80vh; /* Impede que a imagem ultrapasse 80% da altura da viewport */
+    border-radius: 50%; /* Torna a imagem circular, opcional */
+}
+/* Estilo para o conteúdo principal */
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semitransparente para o conteúdo */
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+h1 {
+    text-align: center; /* Centraliza o título */
+    color: #333; /* Cor do título */
+}
+
+p {
+    font-size: 16px; /* Tamanho do texto */
+    color: #555; /* Cor do texto */
+    margin-bottom: 20px; /* Espaço abaixo dos parágrafos */
+    text-align: justify; /* Justifica o texto para alinhamento uniforme */
+}

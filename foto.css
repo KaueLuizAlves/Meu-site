@@ -1,0 +1,14 @@
+/* Centralizar a imagem dentro do contêiner */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 100vh;           /* Ocupa 100% da altura da viewport */
+}
+
+/* Limitar o tamanho da imagem, se necessário */
+.image-container img {
+    max-width: 100%;
+    max-height: 80vh; /* Impede que a imagem ultrapasse 80% da altura da viewport */
+    border-radius: 50%; /* Torna a imagem circular, opcional */
+}
